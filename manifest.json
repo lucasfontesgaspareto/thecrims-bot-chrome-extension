@@ -1,0 +1,20 @@
+{
+  "name": "the crims bot",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "contextMenus",
+    "https://www.thecrims.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.thecrims.com/*"],
+      "js": ["jquery.min.js", "background.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
